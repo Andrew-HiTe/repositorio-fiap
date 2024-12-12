@@ -1,0 +1,250 @@
+<!-- 
+-Você deverá criar apenas 1 tela.
+-Mantenha o HTML separado do CSS em arquivos .html e .css, respectivamente.
+-Não é necessário o uso de JavaScript.
+-Use e abuse do Bootstrap: deixe o CSS para personalizações que “fujam” dos padrões do framework (com ele é mais rápido!).
+-Você precisa utilizar um framework web, não precisa ser necessariamente o Bootstrap, fique à vontade para escolher um que tenha mais afinidade.
+-Porém, garanta que o projeto abra na máquina do professor através do arquivo .HTML. Projetos que não abrirem serão desconsiderados.
+-A tela precisa estar relacionada ao seu projeto Fintech!
+-Caso faça mais de uma tela, a navegação entre elas é opcional.
+ 
+
+Fique à vontade para criar um layout bem atraente, utilizando fotos, imagens, ícones (mas use o bom senso).
+
+ 
+
+Padrões são importantes
+
+O sistema deve possuir uma identidade visual única (padrões de textos, bordas, tabelas, fontes etc.), de acordo com o padrão escolhido.
+
+Aproveite os recursos do Bootstrap para criar o seu layout responsivo. Desde 2015 o Google prioriza em seu ranking os sites adaptados para mobile, além disso, 60% dos acessos aos sites têm origem nos smartphones!
+
+Para desenvolver, você pode utilizar uma IDE como Sublime Text, Atom ou o VS Code. Fica a seu critério. 
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/Assets/CSS/style.css" />
+    <title>Fintech</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-success fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="/Assets/Images/Logo.png"
+            alt="Imagem da Logo"
+            width="40"
+            height="40"
+          />
+          GoalsFinance</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Meus objetivos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Meu controle de gastos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Minha conta
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li>
+                    <a class="dropdown-item" href="#">Acessar o perfil</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Alterar minhas informações</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Solicitar extrato</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Procurar"
+                aria-label="search"
+              />
+              <button class="btn btn-success" type="submit">Procurar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="tituloh1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="jumbotron mt-5">
+                        <h1 class="display-4">Bem-vindo ao GoalsFinance!</h1>
+                        <p class="lead">
+                            Aqui você pode controlar seus objetivos financeiros e seus
+                            gastos de forma simples e prática.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="container d-flex flex-wrap justify-content-center">
+    <div class="row">
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card card-custom" style="width: 18rem">
+                <img src="/Assets/Images/Objetivos.svg" class="card-img-top" alt="Imagem de um boneco subindo as escadas com uma bandeira no topo, se referindo a objetivo" />
+                <div class="card-body">
+                    <h5 class="card-title">Meus objetivos</h5>
+                    <p class="card-text">
+                        Aqui você pode cadastrar seus objetivos financeiros e acompanhar
+                        o progresso de cada um deles.
+                    </p>
+                    <a href="#" class="btn btn-success">Acessar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card card-custom" style="width: 18rem">
+                <img src="/Assets/Images/Financeiro.svg" class="card-img-top" alt="Imagem de uma mão segurando um sifrão pra referenciar o controle de gastos" />
+                <div class="card-body">
+                    <h5 class="card-title">Meu controle de gastos</h5>
+                    <p class="card-text">
+                        Aqui você pode cadastrar seus gastos e acompanhar o quanto você
+                        está gastando.
+                    </p>
+                    <a href="#" class="btn btn-success">Acessar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card card-custom" style="width: 18rem">
+                <img src="/Assets/Images/imagem-usuário.svg" class="card-img-top" alt="Imagem de um boneco pra se referir ao usuário" />
+                <div class="card-body">
+                    <h5 class="card-title">Minha conta</h5>
+                    <p class="card-text">
+                        Aqui você pode acessar seu perfil, alterar suas informações e
+                        solicitar seu extrato.
+                    </p>
+                    <a href="#" class="btn btn-success">Acessar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="fundoContainer">
+    <div
+      class="container-fluid mt-4 border border-dark border-thick rounded gastos"
+    >
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card-body">
+            <h2 class="card-title text-center">Gastos do Mês</h2>
+            <div class="d-flex justify-content-around align-items-center">
+              <div>
+                <p class="card-text text-danger font-weight-bold">
+                  Total de gastos: R$ 1.200,00
+                </p>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  Última conta registrada
+                </h6>
+                <p class="card-text text-danger">Conta de luz - R$ 150,00</p>
+              </div>
+              <div>
+                <a href="#" class="btn btn-success">Registrar nova compra</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid mt-4 border border-dark border-thick rounded objetivos">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card-body">
+                    <h2 class="card-title text-center">Objetivos</h2>
+                    <div class="d-flex justify-content-around align-items-center">
+                        <div>
+                            <p class="card-text text-success font-weight-bold">
+                                Objetivo: Comprar um carro
+                            </p>
+                            <h6 class="card-subtitle mb-2 text-muted">
+                                Total guardado até agora
+                            </h6>
+                            <p class="card-text text-success">R$ 5.000,00</p>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-success">Adicionar investimento</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer class="bg-success text-center text-lg-start">
+      <div class="text-center p-3 text-white">
+        © 2021 GoalsFinance - Todos os direitos reservados
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <html></html>
+</html>
